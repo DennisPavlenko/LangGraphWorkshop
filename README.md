@@ -13,15 +13,6 @@ This repo is designed for a 60-minute hands-on workshop where you live-code a ti
 python triage_workshop.py
 ```
 
-## Local start (optional)
-```bash
-python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -U pip
-pip install -r requirements.txt
-python triage_workshop.py
-```
-
 ## What you implement during the workshop
 Open `triage_workshop.py` and complete the TODOs:
 - `classify`
