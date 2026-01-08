@@ -17,7 +17,7 @@ class State(TypedDict, total=False):
     decision: Literal["approve", "reject", "edit"]
 
 
-# ---- 2) Nodes (you'll implement these TODOs live) ----
+# ---- 2) Nodes ----
 def classify(state: State) -> dict:
     """
     TODO:
@@ -113,7 +113,7 @@ def build_graph():
     # builder.add_edge("send", END)
     # builder.add_edge("escalate", END)
 
-    memory = InMemorySaver()  # required for interrupt/resume patterns
+    memory = InMemorySaver()  # required for interrupt/resume pattern
     return builder.compile(checkpointer=memory)
 
 
