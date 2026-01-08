@@ -11,10 +11,10 @@ from langgraph.checkpoint.memory import InMemorySaver
 
 # ---- 1) Define state (shared data passed between nodes) ----
 class State(TypedDict, total=False):
-    ticket: str
-    category: Literal["billing", "tech", "general"]
-    draft: str
-    decision: Literal["approve", "reject", "edit"]
+    """
+    TODO:
+      - define state fields 
+    """
 
 
 # ---- 2) Nodes ----
